@@ -1,0 +1,825 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* IMPORTANDO FONTE */
+@font-face {
+    font-family: 'cedora-bold';
+    src: url(fonts/Cedora-BoldStd.otf);
+}
+
+/* CABEÇALHO */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 90px;
+    background-color: white;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+
+/* LOGO */
+header img { 
+    width: 300px;
+}
+
+/* MENU - BLOCO */
+header .menu {
+    display: flex;
+    gap: 50px;
+}
+
+/* MENU */
+header .menu p {
+    font-family: 'cedora-bold';
+}
+
+/* LINK MENU */
+header .menu p a {
+    text-decoration: none;
+    color: black;
+}
+
+/* LINK MENU */
+header .menu p a:hover {
+    border-bottom: 2px solid #0560AC;
+    padding-bottom: 5px;
+}
+
+/* -------------------------- */
+
+/* HEADER MOBILE */
+@media (max-width: 480px) {
+    header{
+      display: flex;
+      flex-direction: column;      
+      background-color: white;
+    }
+}
+
+/* LOGO MOBILE */
+@media (max-width: 480px) {
+    header img{
+      width: 290px;
+    }
+}
+
+/* MENU MOBILE */
+@media (max-width: 480px) {
+    header .menu {
+      font-size: 12px;
+      display: flex;
+      gap: 30px;
+    }
+}
+
+.banner img{
+    width: 320px;
+}
+
+
+/* -------------------------- */
+
+
+/* MENU TABLET */
+@media (max-width: 780px) {
+    header .menu {
+      font-size: 15px;
+      display: flex;
+    }
+}
+
+/* LOGO - TABLET */
+@media (max-width: 780px) {
+    header .logo img {
+      width: 300px;
+    }
+}
+
+/* -------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Roboto:wght@900&display=swap');
+
+.margem{
+    height: 150px;
+}
+
+/* BANNER */
+.banner{
+    font-family: 'Lilita One', sans-serif;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+
+}
+
+/* TITULOS */
+.banner .titulo{ 
+    width: 35%; 
+    
+}
+
+/* TITULOS - H1 */
+.banner .titulo h1{
+    color: #050C26;
+    font-size: 60px;
+    line-height: 1;
+    font-weight: 900;
+}
+
+/* TITULOS - H1 (SPAN)*/
+.banner .titulo h1 span{
+    color: #0560AC;
+}
+
+/* PARAGRAFO */
+.banner .titulo p{
+    color: gray;
+    padding-top: 20px;
+    font-size: 17px;
+}
+
+/* PARAGRAFO - SPAN*/
+.banner .titulo p span{
+    color: #0560AC;
+    font-weight: bold;
+}
+
+/* BANNER IMAGEM */
+.banner .foto{
+    color: gray;
+    overflow: hidden; /* Cortar o conteúdo excedente */
+}
+
+
+/* IMAGEM */
+.banner .foto img{
+    width: 600px;    
+}
+
+
+/* -------------------------------------------------- */
+
+/* RESPONSIVO - CELULAR */
+@media(max-width: 480px){
+    .margem{
+        height: 100px;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .banner{
+        width: 100%;
+        overflow: hidden; /* Cortar o conteúdo excedente */
+        flex-direction: column;
+    }
+
+    .banner .titulo{
+        width: auto;
+    }
+
+    .banner .titulo h1{
+        width: auto;
+        padding: 20px;
+        font-size: 50px;
+    }
+
+    .banner .titulo p{
+        padding: 20px;
+        text-align: left;
+    }
+}
+
+/* -------------------------------------------------- */
+
+
+/* INICIO REGRAS CSS REFERENTES À SEGUNDA VERSÃO */
+@media (min-width: 481px) and (max-width: 1024px) {
+
+    .banner{
+        width: 100%;
+        overflow: hidden; /* Cortar o conteúdo excedente */
+    }
+
+
+    .banner .titulo{
+        padding: 5px;
+    }
+
+    .banner .titulo h1{
+        font-size: 30px;      
+        overflow: hidden; /* Cortar o conteúdo excedente */
+        width: auto;
+    }
+
+    .banner .foto{   
+        overflow: hidden; /* Cortar o conteúdo excedente */
+
+    }
+    
+    .banner .foto img{
+        width: 300px;
+    }
+  
+}
+
+/* -------------------------------------------------- */
+
+.banner2{
+    font-family: 'Lilita One', sans-serif;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    padding: 20px;
+    background-color: #005DAA;
+    border-radius: 20px;
+}
+
+
+.banner2 .blocos{
+    display: flex;
+    align-items: center;
+}
+
+.banner2 .textos{
+    color: white;
+}
+
+.banner2 .blocos .textos h2{
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+
+.banner2 .blocos .textos p{
+    padding-left: 10px;
+    font-size: 14px;
+    color: #a6c1d6;
+}
+
+
+/* -------------------------------------------------- */
+
+
+/* RESPONSIVO - CELULAR */
+@media(max-width: 480px){
+    .banner2{
+        flex-wrap: wrap;
+        width: 80%;
+        padding: 5px;
+
+    }
+
+    .banner2 .blocos{
+        padding: 15px;
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+}
+
+/* -------------------------------------------------- */
+
+/* INICIO REGRAS CSS REFERENTES À SEGUNDA VERSÃO */
+@media (min-width: 481px) and (max-width: 1024px) {
+
+    .banner2{
+        width: 90%;
+        flex-wrap: wrap;
+    }
+  
+}
+
+/* -------------------------------------------------- */
+
+
+.cursos-textos{
+    font-family: 'Lilita One', sans-serif;
+    padding: 30px;    
+    text-align: center;
+}
+
+.cursos-textos h2{
+    font-size: 30px;  
+    color: #050C26;  
+}
+
+.cursos-textos p{
+    padding-top: 10px;
+    font-size: 15px;    
+    text-align: center;
+    color: rgb(38, 37, 37);
+}
+
+/* -------------------------------------------------- */
+
+
+
+
+
+/* --------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.cursos{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 70px;
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+
+}
+
+.cursos .card {
+    width: 300px;
+    height: 320px;
+    padding: 10px;
+    border-radius: 20px; 
+    background-color: white; 
+    box-shadow: 1px 1px 5px 1px rgb(203, 203, 203);
+}
+
+
+
+/* BLOCOS DAS IMAGENS*/
+.cursos .card .imagem,
+.cursos .card .imagem1,
+.cursos .card .imagem2,
+.cursos .card .imagem3,
+.cursos .card .imagem4,
+.cursos .card .imagem5,
+.cursos .card .imagem6
+{
+    height: 200px;
+    width: 300px;
+    background-color: grey;
+    border-radius: 20px;  
+
+}
+
+/* TÉCNICO INFORMÁTICA */
+.cursos .card .imagem1{ 
+    background-image: url(img/tec-informatica.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* TÉCNICO MECÂNICA */
+.cursos .card .imagem2{ 
+    background-image: url(img/tec-mecanica.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* TÉCNICO ELÉTRICA */
+.cursos .card .imagem3{ 
+    background-image: url(img/tec-eletrica.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* TÉCNICO SEGURANÇA */
+.cursos .card .imagem4{ 
+    background-image: url(img/tec-seguranca.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* TÉCNICO LOGÍSTICA */
+.cursos .card .imagem5{ 
+    background-image: url(img/logistica.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* APRENDIZAGEM MECÊNICA */
+.cursos .card .imagem6{ 
+    background-image: url(img/mecanica.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* NIVEL DO CURSO */
+.cursos .textos .nivel{
+    font-size: 12px;
+    padding: 20px 10px 0 10px;
+}
+
+/* NOME DO CURSO */
+.cursos .textos .curso{
+    font-size: 18px;
+    padding: 0px 10px 0 10px;
+    border-bottom: 1px dashed gray;
+    padding-bottom: 20px;
+}
+
+.cursos .rodape{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.cursos .rodape img{
+    width: 20px;
+}
+
+/* BOTÃO */
+.cursos button{
+    padding: 5px;
+    border-radius: 30px;
+    width: 100px;
+    border: none;
+    background-color: #005DAA;
+}
+
+.cursos .rodape p{
+    color: gray;
+    margin-right: 90px;
+    font-size: 13px;
+}
+
+.cursos button a{
+    text-decoration: none;
+    color: white;    
+}
+
+
+/* -------------------------------------------------- */
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .cursos{
+        flex-wrap: wrap;
+        width: auto;
+        overflow: hidden;
+        width: 70%;
+    }
+  
+
+}
+
+/* -------------------------------------------------- */
+
+.experiencia{
+    height: 400px;
+    background-color: #E3F2FD;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* IMAGEM ESTUDANTE CARTOON*/
+.experiencia .imagem img{
+    width: 520px;
+}
+
+
+
+.experiencia .textos .titulo h3{
+    font-size: 35px;
+    color: #050C26;
+    margin-bottom: 50px;
+}
+
+.experiencia .textos .titulo span{
+    color: #005DAA;
+}
+
+.experiencia .bloco1{
+    display: flex;
+    align-items: top;
+    margin-bottom: 10px;
+}
+
+.experiencia .textos h3{
+    padding-left: 10px;
+    font-size: 17px;
+}
+
+.experiencia .textos p{
+    width: 300px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+
+/* -------------------------------------------------- */
+
+
+/* RESPONSIVO - CELULAR */
+@media(max-width: 480px){
+    .experiencia{
+        flex-direction: column;
+        width: auto;    
+        align-items: center; 
+        justify-content: center;
+        height: auto;
+    }
+
+    /* DIV DA IMAGEM */
+    .experiencia .imagem{
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    /* IMAGEM */
+    .experiencia .imagem img{
+        width: 250px;        
+    }
+
+    .experiencia .textos{
+        width: 80%;
+    }
+
+
+    /* TITULO */
+    .experiencia .textos .title{
+        text-align: center;
+        font-size: 5px;
+    }
+
+    .experiencia .textos p{
+        width: auto;
+        font-size: 13px;
+    }   
+
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .experiencia{
+        width: auto; 
+        overflow: hidden;   
+        flex-direction: column;  
+        height: auto;
+    }
+  
+
+}
+
+@media(max-width: 1024px) {
+    .experiencia{
+        width: auto; 
+        overflow: hidden;   
+        height: auto;
+    }
+  
+
+}
+
+/* ----------------------------------- */
+
+/* COMENTÁRIOS DE ALUNOS */
+.alunos{
+    background-color: #005DAA;
+    margin-bottom: 100px;  
+    font-family: 'Poppins', sans-serif;
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* TÍTULO*/
+.alunos .textos{
+    text-align: center;
+    color: white;
+    line-height: 1.5;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.bloco{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 250px;
+}
+
+/* COMENTÁRIO */
+.alunos .card p{
+    font-size: 14px;
+    color: gray;
+}
+
+/* CARD */
+.bloco .card{
+    border: 1px solid white;
+    width: 350px;
+    padding: 20px;
+    border-radius: 7px;
+    background-color: white;
+}
+
+/* BLOCO ALUNO E CURSO*/
+.bloco .aluno{
+    margin-top: 20px;
+}
+
+/* ALUNO */
+.bloco .aluno h3{
+    font-size: 15px;
+}
+
+/* CURSO */
+.bloco .aluno p{
+    font-size: 13px;
+}
+
+/* ICONE USER */
+.bloco .rodape{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ICONE USER */
+.bloco .foto-aluno img{
+    width: 50px;
+}
+
+/* -------------------------- */
+
+
+/* COMENTÁRIOS DE ALUNOS */
+.alunos{
+    background-color: #005DAA;
+    font-family: 'Poppins', sans-serif;
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* TÍTULO*/
+.alunos .textos{
+    text-align: center;
+    color: white;
+    line-height: 1.5;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.bloco{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 250px;
+}
+
+/* COMENTÁRIO */
+.alunos .card p{
+    font-size: 14px;
+    color: gray;
+}
+
+/* CARD */
+.bloco .card{
+    border: 1px solid white;
+    width: 350px;
+    padding: 20px;
+    border-radius: 7px;
+    background-color: white;
+}
+
+/* BLOCO ALUNO E CURSO*/
+.bloco .aluno{
+    margin-top: 20px;
+}
+
+/* ALUNO */
+.bloco .aluno h3{
+    font-size: 15px;
+}
+
+/* CURSO */
+.bloco .aluno p{
+    font-size: 13px;
+}
+
+/* ICONE USER */
+.bloco .rodape{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ICONE USER */
+.bloco .foto-aluno img{
+    width: 50px;
+}
+
+/* --------------------------*/
+
+
+@media(max-width: 480px){
+
+    .alunos{
+        height: auto;
+    }
+
+    .alunos .textos p{
+        font-size: 13px; 
+        padding: 5px;
+    }
+    
+    .alunos .bloco{
+        flex-wrap: wrap;
+        height: auto;
+        gap: 20px;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .alunos{
+        width: auto;    
+    }
+
+    .alunos .bloco{
+        flex-wrap: wrap;
+        height: auto;
+        gap: 20px;
+    } 
+
+}
+
+
+@media(min-width: 768px){
+    .alunos .bloco{
+
+        gap: 50px;
+        align-items: flex-start;
+    }
+
+    .alunos{
+        height: auto;
+    }
+
+
+}
+
+
+/* -------------------------- */
+
+/* RODAPÉ */
+footer{
+    margin-top: 70px;
+    background-color: #E3F2FD;
+    color: #050C26;
+    font-family: 'Poppins', sans-serif;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+footer img{
+    width: 200px;
+}
+
+footer .rodape{
+    border-top: 0.2px solid #C3D6E3;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+
+@media(max-width: 420px){
+    footer p{
+        font-size: 80%;    
+        text-align: center;   
+        padding: 5px;
+    }
+
+}
+
+
+@media (min-width: 421px) and (max-width: 768px) {
+    footer p{
+        font-size: 80%;    
+        text-align: center;   
+        padding: 5px;
+    }
+}

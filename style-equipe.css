@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* IMPORTANDO FONTE */
+@font-face {
+    font-family: 'cedora-bold';
+    src: url(fonts/Cedora-BoldStd.otf);
+}
+
+
+body {
+    font-family: 'cedora-bold', sans-serif;
+}
+
+
+/* CABEÇALHO */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 90px;
+    background-color: white;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+/* LOGO */
+header img { 
+    width: 300px;
+}
+
+/* MENU - BLOCO */
+header .menu {
+    display: flex;
+    gap: 50px;
+}
+
+/* MENU */
+header .menu p {
+    font-family: 'cedora-bold';
+}
+
+/* LINK MENU */
+header .menu p a {
+    text-decoration: none;
+    color: black;
+}
+
+/* LINK MENU */
+header .menu p a:hover {
+    border-bottom: 2px solid #0560AC;
+    padding-bottom: 5px;
+}
+
+/* -------------------------- */
+
+/* HEADER MOBILE */
+@media (max-width: 480px) {
+    header{
+      display: flex;
+      flex-direction: column;      
+      background-color: white;
+    }
+}
+
+/* LOGO MOBILE */
+@media (max-width: 480px) {
+    header img{
+      width: 290px;
+    }
+}
+
+/* MENU MOBILE */
+@media (max-width: 480px) {
+    header .menu {
+      font-size: 12px;
+      display: flex;
+      gap: 30px;
+    }
+}
+
+
+/* -------------------------- */
+
+
+/* MENU TABLET */
+@media (max-width: 780px) {
+    header .menu {
+      font-size: 15px;
+      display: flex;
+    }
+}
+
+/* LOGO - TABLET */
+@media (max-width: 780px) {
+    header .logo img {
+      width: 300px;
+    }
+}
+
+/* -------------------------- */
+.container-time {
+    padding: 60px;
+    margin: auto;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #cce5fa;
+    transition: transform 0.5s ease; /* Adiciona uma transição */
+}
+
+
+/* Estilos para os cards */
+.container-time .card-time {
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: calc(50% - 20px);
+    height: 50%;
+    max-width: 400px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden; 
+}
+
+.container-time .card-time img {
+    padding-top: 10px;
+    max-height: 200px;
+    border-radius: 50%; /* Adicione esta linha para tornar a imagem redonda */
+}
+
+.container-time .card-time:hover {
+    box-shadow: 0 0 10px rgba(151, 151, 151, 0.5);
+    cursor: pointer;
+}
+
+.container-time h4 {
+    margin: 5px 0;
+}
+
+.container-time span {
+    color: rgb(165, 163, 163);
+}
+
+.container-time .card-time .card-detail {
+    width: 150px; 
+    height: 10px; 
+    background-color: #0560AC; 
+    position: absolute;
+    top: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    transition: width 0.3s ease;
+}
+
+.container-time .card-time:hover .card-detail {
+    width: 200px; 
+}
+
+.container-time .card-time .rede-social img {
+    width: 30px;
+    height: auto;
+}
+
+/*deixando o icone do linkedin quadrdao*/
+.container-time .card-time .rede-social a:nth-child(2) img {
+    border-radius: 0; 
+}
+
+.container-time.show-cards {
+    transform: translateY(0);
+}
+
+/* Adicione um seletor para ocultar os cards inicialmente */
+.container-time.hide-cards {
+    transform: translateY(100%);
+}
+
+
+.parallax {
+    height: 900px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px; 
+}
+
+.parallax-image {
+    width: 100%;
+    height: 100%;
+    background-image: url("fotos-senai-turmas/equipe.jpg");
+    background-size: cover;
+    background-position: center;
+    transform: translateZ(0);
+}
+
+.parallax-image::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); 
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+
+
+
+
+
+/* Estilos para telas menores (telefones) */
+@media (max-width: 768px) {
+    .container-time .card-time {
+        width: 90%; 
+    }
+
+    .container-time img {
+        max-width: 100%;
+        max-height: auto;
+    }
+}
+
+/* Estilos para telas de tablets */
+@media (max-width: 1024px) {
+    .container-time .card-time {
+        width: 80%; 
+    }
+}
+
+
+
+/* RODAPÉ */
+footer{
+    margin-top: 10px;
+    background-color: white;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+footer img{
+    width: 200px;
+}
+
+footer .rodape{
+    border-top: 0.2px solid #C3D6E3;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+
+@media(max-width: 420px){
+    footer p{
+        font-size: 80%;    
+        text-align: center;   
+        padding: 5px;
+    }
+
+}
+
+
+@media (min-width: 421px) and (max-width: 768px) {
+    footer p{
+        font-size: 80%;    
+        text-align: center;   
+        padding: 5px;
+    }
+}
+
+
+@media(max-width: 426px){
+    .parallax{
+        margin-top: 100px;
+        height: 100px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .parallax{
+        height: 300px;
+        width: auto;
+    }
+}
